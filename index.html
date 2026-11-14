@@ -1411,7 +1411,8 @@ const mMsg=(id,t,ok)=>{const e=document.getElementById(id);if(e){e.textContent=t
 function fbEntrarM(){const e=document.getElementById('mE').value.trim(),s=document.getElementById('mS').value;if(!e||!s){mMsg('mM','Informe e-mail e senha.');return}mMsg('mM','Entrando…',1);fbEntrou=true;
  fbA.signInWithEmailAndPassword(e,s).then(()=>{document.getElementById('mS').value=''}).catch(x=>mMsg('mM',/password|user|credential|invalid/.test(x.code||'')?'E-mail ou senha incorretos.':/network/.test(x.code||'')?'Sem internet. Conecte-se para entrar.':'Não foi possível entrar: '+x.message))}
 async function lgEsqueci(id,mid){const e=document.getElementById(id).value.trim();if(!/^\S+@\S+\.\S+$/.test(e)){mMsg(mid,'Digite seu e-mail acima e toque de novo em “Esqueci minha senha”.');return}
- try{await fbA.sendPasswordResetEmail(e);mMsg(mid,'Enviamos um link para '+e+' criar uma nova senha. Veja também a caixa de spam.',1)}catch(x){mMsg(mid,/user-not-found/.test(x.code||'')?'Não existe conta com este e-mail.':'Não foi possível enviar: '+(x.message||x))}}
+ mMsg(mid,'Enviando…',1);try{await fbA.sendPasswordResetEmail(e);mMsg(mid,'Pronto! Se '+e+' tiver conta, o link chega em alguns minutos, enviado por noreply@pneus-rofe.firebaseapp.com. Procure também em Spam / Lixo eletrônico / Promoções.',1)}catch(x){mMsg(mid,rstErr(x))}}
+const rstErr=x=>{const c=x&&x.code||'';return/user-not-found/.test(c)?'Não existe conta com este e-mail. Confira se digitou certo.':/invalid-email|missing-email/.test(c)?'E-mail inválido.':/too-many/.test(c)?'Muitas tentativas seguidas. Espere uns minutos e tente de novo.':/network/.test(c)?'Sem internet. Conecte-se e tente de novo.':'Não foi possível enviar: '+(x&&x.message||x)};
 function mtLeForm(p){const g=i=>document.getElementById(p+i),r={nome:nmFmt(g('N').value),sobrenome:nmFmt(g('So').value),tel:g('Tel').value.replace(/\D/g,''),cid:g('Cid').value};
  if(r.nome.length<2)return[null,'Informe seu nome.',p+'N'];if(r.sobrenome.length<2)return[null,'Informe seu sobrenome.',p+'So'];if(r.tel.length<10)return[null,'Informe o telefone com DDD.',p+'Tel'];if(!r.cid)return[null,'Escolha a sua filial.',p+'Cid'];return[r]}
 async function mtSolic(u,p){const now=Date.now();
@@ -1693,7 +1694,7 @@ function liga(){if(!fbD||!fbUser()||!ativo())return;desliga();_pend.forEach(envi
 /* ===== LOGIN (Firebase Auth) ===== */
 const lgShow=s=>{const o=document.getElementById('lg');if(o)o.style.display=s?'grid':'none'},lgM=t=>{const e=document.getElementById('lgM');if(e)e.textContent=t};
 /* a conta só entra quando a pessoa clica em Entrar: sessão antiga guardada no navegador é descartada ao abrir o sistema */
-if(FB_ON){firebase.initializeApp(FB_CONFIG);fbA=firebase.auth();fbD=firebase.database();fbA.setPersistence(firebase.auth.Auth.Persistence.SESSION).catch(()=>{});
+if(FB_ON){firebase.initializeApp(FB_CONFIG);fbA=firebase.auth();try{fbA.languageCode='pt-BR'}catch(e){}fbD=firebase.database();fbA.setPersistence(firebase.auth.Auth.Persistence.SESSION).catch(()=>{});
  fbA.onAuthStateChanged(async u=>{
   if(!u){try{sessionStorage.removeItem('rofe_auth')}catch(e){}if(H.classList.contains('mtload'))mtFechar();desliga();CONTA=null;PESSOAL=null;_autoF=0;SY.msg='Entre na conta para sincronizar';lgShow(true);try{aplPerfil()}catch(e){}return}
   aoEntrar(u)})}else lgShow(false);
@@ -1857,7 +1858,7 @@ async function usBloq(uid,v){const x=US[uid];if(!x||!x.conta)return;if(v&&!confi
 async function usDel(uid){const x=US[uid];if(!x||usSt(x)==='super'||uid===fbUser().uid)return;const n=nomeC(x.pessoal)||x.email;
  if(!confirm('EXCLUIR o usuário '+n+'?\n\nEle perde o acesso a todos os sistemas na hora e sai da lista. O que ele já lançou continua registrado.'))return;
  try{await fbD.ref(RAIZ+'/usuarios/'+uid).set({email:x.email||'',excluido:true,excluidoEm:Date.now(),excluidoPor:(fbUser().email||'').toLowerCase(),conta:{ativo:false},pessoal:x.pessoal||null});toast('USUÁRIO EXCLUÍDO')}catch(e){alert('Não foi possível excluir: '+(e.message||e))}}
-async function usSenha(e){if(!e||!confirm('Enviar para '+e+' um e-mail com o link para criar uma nova senha?'))return;try{await fbA.sendPasswordResetEmail(e);toast('E-MAIL DE NOVA SENHA ENVIADO')}catch(x){alert('Não foi possível enviar: '+(x.message||x))}}
+async function usSenha(e){if(!e||!confirm('Enviar para '+e+' um e-mail com o link para criar uma nova senha?'))return;try{await fbA.sendPasswordResetEmail(e);toast('E-MAIL DE NOVA SENHA ENVIADO');setTimeout(()=>alert('E-mail enviado para '+e+'.\n\nRemetente: noreply@pneus-rofe.firebaseapp.com\nPeça para a pessoa procurar também em Spam / Lixo eletrônico / Promoções.'),300)}catch(x){alert(rstErr(x))}}
 function syInfo(){$('#fm').innerHTML=`<h3>Sincronização</h3><p><b>${esc(SY.msg)}</b>${_pend.length?'<br>'+_pend.length+' alteração(ões) aguardando conexão.':''}</p><p>Tudo o que é lançado sobe na hora para o Firebase e aparece em tempo real para todos os usuários e aparelhos.</p><div class="fa"><button type="button" class="p" onclick="dlg.close()">Fechar</button></div>`;dlg.showModal()}
 
 /* ===== BACKUP ===== */
