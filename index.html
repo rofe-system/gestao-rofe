@@ -349,11 +349,46 @@ b.ok{color:var(--ok)}b.wn{color:var(--wn)}b.bad{color:var(--bad)}
 @media print{.sairx,.obq{display:none!important}}
 .mp{scrollbar-width:none;-ms-overflow-style:none}.mp::-webkit-scrollbar{display:none;width:0;height:0}
 
+/* opção "usar sempre esta versão" */
+.vsem{display:flex;gap:12px;align-items:flex-start;max-width:640px;margin:16px auto 4px;padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;text-align:left;cursor:pointer}
+.vsem input{width:22px;height:22px;flex:none;margin:2px 0 0;accent-color:#ff5a6a}.vsem>span>b{display:block;font-size:15px}.vsem small b{display:inline;font-size:inherit}.vsem small{display:block;color:#cfe3fa;font-size:13px;line-height:1.45;margin-top:2px}.vsem:has(input:checked){border-color:#ff8a96;background:rgba(255,90,106,.18)}
+#lgo.go~#in3 .vsem{animation:none}
+/* frota completa */
+.kp b.uf,html:not(.mob) .kp b.uf{color:#fff!important;background:var(--sky)!important;-webkit-text-fill-color:#fff;display:inline-block;font-size:11px;line-height:1.5;padding:1px 7px;margin-left:5px;white-space:nowrap;vertical-align:.1em}
+.frp{font:800 16px "Figtree",system-ui,sans-serif;letter-spacing:.8px;color:var(--ink)}
+/* detalhe do pneu */
+.tg.sky{color:var(--sky)}
+.tvh{display:flex;align-items:center;gap:14px;margin:0 0 14px}.tvic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;flex:none;background:color-mix(in srgb,var(--sky) 16%,transparent);color:var(--sky)}.tvic svg{width:32px;height:32px}
+.tvt{flex:1;min-width:0}.tvt h3{margin:0;font-size:28px;line-height:1.1;overflow-wrap:anywhere}.tvt p{margin:3px 0 0;color:var(--mut);font-size:14.5px}
+.tvst{flex:none;font-size:13px}.tvx{flex:none;width:38px;height:38px;padding:0;border-radius:50%;font-size:16px}
+.tvloc,.tvs{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;background:var(--fld);border:1px solid var(--ln);margin-bottom:10px}
+.tvloc>span{font-size:26px;flex:none}.tvloc>div{flex:1;min-width:0}.tvloc>div>b{display:block;font-size:19px;letter-spacing:.6px;color:var(--ink)}.tvloc small{color:var(--mut);font-size:13.5px}.tvloc small b{color:var(--ink)}.tvloc button{flex:none;font-size:13.5px;padding:8px 12px}
+.tvs>div:first-child{flex:none}.tvs small{display:block;color:var(--mut);font-size:12px}.tvs b{font-size:22px;line-height:1.1}.tvs>small{flex:none;font-weight:700}
+.tvbar{flex:1;height:10px;border-radius:99px;background:color-mix(in srgb,var(--mut) 25%,transparent);overflow:hidden}.tvbar i{display:block;height:100%;border-radius:99px;background:var(--ok)}
+.tvs.ok b,.tvs.ok>small{color:var(--ok)}.tvs.wn b,.tvs.wn>small{color:var(--wn)}.tvs.wn .tvbar i{background:var(--wn)}.tvs.bad b,.tvs.bad>small{color:var(--bad)}.tvs.bad .tvbar i{background:var(--bad)}
+.tvg{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:10px}.tvi{padding:9px 12px;border-radius:12px;background:var(--fld);border:1px solid var(--ln);min-width:0}
+.tvi small{display:block;color:var(--mut);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tvi b{display:block;font-size:15.5px;color:var(--ink);overflow-wrap:anywhere}
+.tva{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 6px}
+.tvl{margin:14px 0 0;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.tvp,.tvb,.tvd{display:grid;gap:8px;margin-top:8px}.tvp{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}.tvb{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}.tvd{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-top:12px;padding-top:12px;border-top:1px dashed var(--ln)}
+.tvp button,.tvb button,.tvd button{display:flex;align-items:center;justify-content:center;gap:8px;padding:11px 12px;font-size:14.5px;border-radius:12px}.tvp button{padding:14px 12px;font-size:15.5px}.tvp button span,.tvb button span,.tvd button span{font-size:1.15em;line-height:1}
+@media(max-width:520px){.tvt h3{font-size:24px}.tvloc{flex-wrap:wrap}.tvloc button{width:100%}.tvp,.tvb{grid-template-columns:1fr 1fr}}
 /* sigla do estado em destaque */
 .uf{display:inline-block;margin-left:5px;padding:1px 7px;border-radius:6px;background:var(--sky);color:#fff;font:800 .78em/1.45 "Figtree",system-ui,sans-serif;letter-spacing:.06em;vertical-align:.08em}
 .cch{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:2px}
 .cch button{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;border-radius:12px;text-align:left;font-size:16px;font-weight:600;background:var(--fld);color:var(--ink);border:1px solid var(--ln);box-shadow:none}
 .cch button .uf{font-size:13px;padding:3px 9px}.cch button.on{border-color:var(--sky);box-shadow:0 0 0 2px color-mix(in srgb,var(--sky) 40%,transparent);background:color-mix(in srgb,var(--sky) 14%,var(--fld))}
+
+/* ===== desktop: usar a tela inteira ===== */
+html:not(.mob) main{max-width:none;padding:28px 40px 48px}
+html:not(.mob) #nfm,html:not(.mob) #usm,html:not(.mob) #bkm{max-width:none;padding:24px 40px 60px}
+html:not(.mob) .kp{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}html:not(.mob) .kp b{display:block;white-space:nowrap;font-size:clamp(20px,1.7vw,30px)}
+html:not(.mob) .tb input:not([type=checkbox]){max-width:420px;flex:1 1 260px}
+.vgr{display:grid;grid-template-columns:1fr;gap:0 16px;align-items:start}
+@media(min-width:1500px){html:not(.mob) .vgr{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:2300px){html:not(.mob) .vgr{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1700px){html:not(.mob) .nfg{grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}}
+@media print{.vgr{display:block}}
 </style>
 <style>
 #cw{position:fixed;inset:0;z-index:150;display:flex;flex-direction:column;background:#0f1217}
@@ -393,7 +428,7 @@ b.ok{color:var(--ok)}b.wn{color:var(--wn)}b.bad{color:var(--bad)}
 <div class="ch2 ch3 ch4"><button type="button" id="cp" onclick="escolha('pneus')"><svg class="ti" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6.2"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><path d="M12 5.8V8M12 16v2.2M5.8 12H8M16 12h2.2" stroke-linecap="round"/></svg><b>Sistema de Pneus</b><small>Estoque, frota, recapagem e medições.</small></button><button type="button" id="cm2" onclick="abrirManut()">🔧<b>Manutenção de Frota</b><small>Inspeção e manutenção dos veículos da frota.</small></button><button type="button" id="cc" onclick="abrirComb()">⛽<b>Controle de Combustível</b><small>Abastecimentos do dia, em tempo real em todos os aparelhos.</small></button><button type="button" id="cn" onclick="abrirNF()">🧾<b>Notas Fiscais</b><small>NFs dos caminhões da base, com foto ou digitadas.</small></button></div>
 <p class="devt">🚧 Projeto em Desenvolvimento. Aguarde atualizações para melhores experiências :)</p>
 </div>
-<div id="in3" hidden><p class="iq" id="in3q">Como você quer usar o sistema de pneus?</p><div class="ch2"><button type="button" id="cm" onclick="modo('mobile')">📱<b>Versão mobile</b><small>Menu compacto, botões grandes. Ideal para celular e tablet.</small></button><button type="button" id="cd" onclick="modo('desktop')">🖥️<b>Versão desktop</b><small>Menu lateral e tabelas completas. Ideal para computador.</small></button></div><button type="button" class="bk" onclick="voltarEsc()">← Voltar</button></div>
+<div id="in3" hidden><p class="iq" id="in3q">Como você quer usar o sistema de pneus?</p><div class="ch2"><button type="button" id="cm" onclick="modo('mobile')">📱<b>Versão mobile</b><small>Menu compacto, botões grandes. Ideal para celular e tablet.</small></button><button type="button" id="cd" onclick="modo('desktop')">🖥️<b>Versão desktop</b><small>Menu lateral e tabelas completas. Ideal para computador.</small></button></div><label class="vsem"><input type="checkbox" id="vsem"><span><b>📌 Usar sempre esta versão neste aparelho</b><small>Marque e escolha acima: da próxima vez o sistema já abre direto nela, sem perguntar. Dá para mudar quando quiser no menu da sua foto › <b>Versão do sistema</b>.</small></span></label><button type="button" class="bk" onclick="voltarEsc()">← Voltar</button></div>
 <div id="in2" hidden><h2>Preparando o sistema…</h2><div class="pb"><i id="pbi"></i></div><ul id="ls"></ul></div>
 </div></div>
 <script>try{if(/[?&]inicio/.test(location.search)){sessionStorage.removeItem("sgpneus_sess");localStorage.removeItem("sgpneus_intro");history.replaceState(null,"",location.pathname)}}catch(e){}try{if(sessionStorage.getItem("rofe_auth")&&sessionStorage.getItem("rofe_loc"))document.getElementById("in").className="off"}catch(e){}</script>
@@ -572,6 +607,8 @@ html.mob .mod{max-width:none;border-radius:20px 20px 0 0;padding:18px 16px calc(
 html.mob .mod input{font-size:18px;padding:13px}html.mob .mod .acts button{flex:1;padding:14px;font-size:16px}
 html.mob .kpis{grid-template-columns:1fr 1fr}html.mob #bres button{padding:12px;font-size:14px}
 @media print{#cards{display:none!important}html.mob .sc.tbl{display:block!important}}
+html:not(.mob) .wrap{max-width:none;padding:18px 36px 40px}
+@media(min-width:1400px){html:not(.mob) .kpis{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}}
 </style>
 </head>
 <body>
@@ -1057,7 +1094,7 @@ const TIRE='<svg class="ti" viewBox="0 0 24 24" width="1em" height="1em" fill="n
 const K='sgpneus_v2';let S={tires:[],veic:[],hist:[],rec:[]},view='dash',flt='todos',q='',ft='todos',fc='todos',fm='todos',da='todos';
 const lsJ=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},lsS=(k,v)=>{try{localStorage.setItem(k,typeof v==='string'?v:JSON.stringify(v));return true}catch(e){return false}};
 S=lsJ(K,S);
-try{if(sessionStorage.getItem('rofe_loc')==='pneus'){const p=(sessionStorage.getItem('sgpneus_view')||'').split('|');if(p[0]){view=p[0];flt=p[1]||'todos'}}}catch(e){}
+try{if(sessionStorage.getItem('rofe_loc')==='pneus'){const st=JSON.parse(sessionStorage.getItem('rofe_pn_st')||'null');if(st){view=st.view||view;flt=st.flt||'todos';q=st.q||'';ft=st.ft||'todos';fc=st.fc||'todos';fm=st.fm||'todos';da=st.da||'todos'}}}catch(e){}
 /* ===== SINCRONIZAÇÃO EM TEMPO REAL (Firebase Realtime Database) =====
  Todos os aparelhos e todas as contas leem e gravam no mesmo banco, na hora.
  Cada pneu, veículo, recapadora, registro do histórico e abastecimento é um item separado no banco:
@@ -1219,14 +1256,25 @@ function ouvirConta(u){if(_refU)_refU.off();_refU=fbD.ref(RAIZ+'/usuarios/'+u.ui
   if(era!==JSON.stringify([CONTA,ativo()])){if(ativo())liga();else desliga();toast('SEUS ACESSOS FORAM ATUALIZADOS')}aplPerfil()})}
 async function aoEntrar(u){lgM('Carregando seu perfil…');
  try{await carregaConta(u)}catch(e){lgM('Sem acesso ao banco ('+(e.code||e.message)+'). Publique as regras novas do Firebase.');return}
- lgM('');try{sessionStorage.setItem('rofe_auth','1')}catch(e){}if(!restaurarLoc())intro(1);lgShow(false);ouvirConta(u);if(!PESSOAL||!PESSOAL.ok)pfAbrir(1);aplPerfil();if(ativo())liga();if(isSuper())migraUsuarios()}
+ lgM('');try{sessionStorage.setItem('rofe_auth','1')}catch(e){}if(!restaurarLoc()){_estOk=true;intro(1)}lgShow(false);ouvirConta(u);if(!PESSOAL||!PESSOAL.ok)pfAbrir(1);aplPerfil();if(ativo())liga();if(isSuper())migraUsuarios()}
 /* contas da versão anterior (perfil admin/mecânico) recebem categoria no primeiro acesso do ADM principal */
 /* ao atualizar a página (F5), volta direto para o sistema que estava aberto */
 const setLoc=l=>{try{sessionStorage.setItem('rofe_loc',l)}catch(e){}};
+let _dlgC=null,_fv={},_estOk=false;/* só grava depois que a tela foi restaurada, para não apagar o estado salvo */
+/* guarda a tela do sistema de pneus nesta aba (página, filtros, busca, rolagem e janela aberta) */
+function salvaEst(){if(!fbUser()||!_estOk)return;let l=null;try{l=sessionStorage.getItem('rofe_loc')}catch(e){}if(l!=='pneus')return;
+ try{sessionStorage.setItem('rofe_pn_st',JSON.stringify({view,flt,q,ft,fc,fm,da,pf,frO,y:Math.round(scrollY),dlg:_dlgC,fv:_fv}))}catch(e){}}
+addEventListener('scroll',()=>{clearTimeout(window._se);window._se=setTimeout(salvaEst,200)},{passive:true});
+document.addEventListener('input',e=>{const x=e.target;if(x&&x.id&&x.closest&&x.closest('#fm')&&_dlgC){_fv[x.id]=x.type==='checkbox'||x.type==='radio'?x.checked:x.value;salvaEst()}},true);
+document.addEventListener('change',e=>{const x=e.target;if(x&&x.id&&x.closest&&x.closest('#fm')&&_dlgC){_fv[x.id]=x.type==='checkbox'||x.type==='radio'?x.checked:x.value;salvaEst()}},true);
 function restaurarLoc(){let l=null;try{l=sessionStorage.getItem('rofe_loc')}catch(e){}if(!l||!ativo()||!PESSOAL||!PESSOAL.ok)return false;
- if(l==='comb'&&P('sis_comb')){mostrarComb();return true}
- if(l==='nf'&&P('sis_nf')){mostrarNF();return true}
- if(l==='pneus'&&P('sis_pneus')){try{const p=(sessionStorage.getItem('sgpneus_view')||'').split('|');if(p[0]&&V_[p[0]]){view=p[0];flt=p[1]||'todos'}}catch(e){}aplM();document.getElementById('in').classList.add('off');carregar(true);return true}
+ if(l==='comb'&&P('sis_comb')){_estOk=true;mostrarComb();return true}
+ if(l==='nf'&&P('sis_nf')){_estOk=true;mostrarNF();return true}
+ if(l==='pneus'&&P('sis_pneus')){let st=null;try{st=JSON.parse(sessionStorage.getItem('rofe_pn_st')||'null')}catch(e){}
+  if(st){view=st.view||'dash';flt=st.flt||'todos';q=st.q||'';ft=st.ft||'todos';fc=st.fc||'todos';fm=st.fm||'todos';da=st.da||'todos';if(st.pf)pf=Object.assign(pf0(),st.pf);if(st.frO)frO=st.frO}
+  aplM();document.getElementById('in').classList.add('off');
+  carregar(true).then(()=>{if(!st){_estOk=true;return}setTimeout(()=>{scrollTo(0,st.y||0);_estOk=true;const c=st.dlg;if(c&&typeof window[c[0]]==='function'&&!dlg.open){try{window[c[0]](...(c[1]||[]))}catch(e){}
+   setTimeout(()=>{const fv=st.fv||{};for(const k in fv){const e=document.getElementById(k);if(e&&e.closest('#fm')){if(e.type==='checkbox'||e.type==='radio')e.checked=!!fv[k];else e.value=fv[k]}}_fv=fv;salvaEst()},80)}},450)});return true}
  return false}
 async function migraUsuarios(){try{const us=(await fbD.ref(RAIZ+'/usuarios').once('value')).val()||{},u={};
  for(const k in us){const x=us[k];if(x&&!x.conta&&x.perfil){const c=x.perfil==='mecanico'?'mecanico':'lider';u[k+'/conta']={cat:c,perms:Object.fromEntries(CATS[c].p.map(p=>[p,true])),ativo:true,por:'migração automática',em:Date.now()}}}
@@ -1243,9 +1291,14 @@ function aplPerfil(){const u=fbUser(),ok=ativo(),M={cp:'sis_pneus',cm2:'sis_manu
  if(!document.getElementById('nfw').hidden)nfTela();try{draw()}catch(e){}autoAbrir()}
 function autoAbrir(){}
 function ucRender(){const e=document.getElementById('uc');if(!e)return;const u=fbUser();if(!u){e.hidden=true;e.innerHTML='';return}e.hidden=false;const c=CONTA&&CATS[CONTA.cat],I=[['👤','Meu perfil','pfAbrir()']];
- if(isAdm())I.push(['👥','Usuários e acessos','usAbrir()']);if(P('ger_backup'))I.push(['☁️','Backup e sincronização','bkp()']);I.push(['🌓','Alternar tema','tema()'],['🚪','Sair','fbSair()']);
+ if(isAdm())I.push(['👥','Usuários e acessos','usAbrir()']);if(P('ger_backup'))I.push(['☁️','Backup e sincronização','bkp()']);I.push(['🖥️','Versão do sistema','verCfg()'],['🌓','Alternar tema','tema()'],['🚪','Sair','fbSair()']);
  e.innerHTML=`<button type="button" class="ucb" onclick="ucMenu()" aria-haspopup="true">${avatar(PESSOAL,u.email,38)}<span><b>${esc(nomeC()||u.email)}</b><small>${isSuper()?'👑 ADM principal':c?c.i+' '+c.n:'Aguardando liberação'}</small></span><i aria-hidden="true">▾</i></button>
  <div class="ucm" id="ucm" hidden>${I.map(x=>`<button type="button" onclick="ucMenu(0);${x[2]}"><span>${x[0]}</span>${x[1]}</button>`).join('')}</div>`}
+function verCfg(){const v=verFixa()||'',op=[['desktop','🖥️','Sempre desktop','Menu lateral e tabelas completas. Abre direto, sem perguntar.'],['mobile','📱','Sempre mobile','Menu compacto e botões grandes. Abre direto, sem perguntar.'],['','❔','Perguntar sempre','Toda vez que abrir um sistema, você escolhe a versão.']];
+ $('#fm').innerHTML=`<h3>Versão do sistema</h3><p>Escolha como os sistemas abrem <b>neste aparelho</b>. Vale para o Sistema de Pneus e o Controle de Combustível.</p><div class="ucat vcf">${op.map(o=>`<label><input type="radio" name="vcf" value="${o[0]}"${o[0]===v?' checked':''}><span><b>${o[1]} ${o[2]}</b><small>${o[3]}</small></span></label>`).join('')}</div>
+ <div class="fa"><button type="button" onclick="dlg.close()">Cancelar</button><button type="button" class="p" onclick="verSalvar()">Salvar</button></div>`;dlg.showModal()}
+function verSalvar(){const v=(document.querySelector('input[name=vcf]:checked')||{}).value||'';try{if(v)localStorage.setItem('rofe_versao',v);else localStorage.removeItem('rofe_versao')}catch(e){}
+ if(v){lsS('sgpneus_mob',v==='mobile'?'1':'0');lsS('comb_mob',v==='mobile'?'1':'0')}dlg.close();toast(v?'SISTEMAS VÃO ABRIR SEMPRE NA VERSÃO '+v.toUpperCase():'VOU PERGUNTAR A VERSÃO TODA VEZ')}
 function ucMenu(s){const m=document.getElementById('ucm');if(m)m.hidden=s===0?true:!m.hidden}
 document.addEventListener('click',e=>{if(!e.target.closest||!e.target.closest('#uc'))ucMenu(0)});
 document.addEventListener('click',e=>{document.querySelectorAll('details.dd[open]').forEach(d=>{if(!d.contains(e.target)||e.target.closest('.dd>div button'))d.open=false})});
@@ -1449,18 +1502,21 @@ function chkL(R){const oc=new Set();S.tires.forEach(t=>{
  if(t.rid&&!RC(t.rid)){t.rid=null;aj(R,'recapadora inexistente desvinculada')}})}
 function chkH(R){const n=S.hist.length;S.hist=S.hist.filter(h=>h&&typeof h==='object').slice(0,3000);if(S.hist.length!==n)aj(R,'histórico limpo (máx. 3000 registros)')}
 let _fimT=0;function fim(){const o=document.getElementById('in');o.classList.add('out');clearTimeout(_fimT);_fimT=setTimeout(()=>o.classList.add('off'),380)}
-async function carregar(fast){const d=n=>new Promise(r=>setTimeout(r,fast?0:n)),g=i=>document.getElementById(i),cap=setTimeout(fim,3000),R={n:0,m:[],w:[]};
+let _carId=0;async function carregar(fast){const my=++_carId,d=n=>new Promise(r=>setTimeout(r,fast?0:n)),g=i=>document.getElementById(i),cap=setTimeout(()=>{if(my===_carId)fim()},3000),R={n:0,m:[],w:[]};
  g('in1').hidden=true;g('in3').hidden=true;g('in2').hidden=false;
  const P=[['Verificando os dados dos pneus',()=>chkT(R)],['Conferindo os veículos',()=>chkV(R)],['Corrigindo vínculos e posições',()=>chkL(R)],['Otimizando o armazenamento',()=>chkH(R)],['Ajustando a tela',()=>{aplM();draw()}]];
  g('ls').innerHTML=P.map((p,i)=>`<li id="s${i}">⏳ ${p[0]}</li>`).join('');
  for(let i=0;i<P.length;i++){try{P[i][1]()}catch(e){R.w.push('falha em: '+P[i][0])}await d(400);g('s'+i).textContent='✅ '+P[i][0];g('pbi').style.width=(i+1)/P.length*100+'%'}
  if(R.n){try{log('Verificação automática',R.n+' ajuste(s): '+R.m.join('; '));sv();UD.length=0;draw()}catch(e){}}
  g('ls').insertAdjacentHTML('beforeend','<li><b>'+(R.n?'✨ '+R.n+' ajuste(s) aplicado(s)':'✨ Tudo certo, nenhum problema encontrado')+'</b></li>'+(R.w.length?'<li>⚠️ '+esc(R.w.slice(0,3).join(' · '))+'</li>':''));
- await d(350);clearTimeout(cap);fim()}
+ await d(350);clearTimeout(cap);if(my===_carId)fim()}
 function lembrar(){}/* a escolha não é mais lembrada: depois do login o usuário sempre começa na tela inicial */
 let ALVO='pneus';
-function escolha(s){if(!P(s==='comb'?'sis_comb':'sis_pneus')){alert('Seu usuário não tem acesso a este sistema.');return}ALVO=s;const m=mq.matches,g=i=>document.getElementById(i);g('cm').classList.toggle('rec',m);g('cd').classList.toggle('rec',!m);g('in3q').textContent=s==='comb'?'Como você quer usar o controle de combustível?':'Como você quer usar o sistema de pneus?';g('in1').hidden=true;g('in3').hidden=false}
-function modo(m){if(ALVO==='comb'){lembrar('combustivel');lsS('comb_mob',m==='mobile'?'1':'0');mostrarComb();return}
+/* versão fixa (mobile/desktop) escolhida pelo usuário neste aparelho; vazio = perguntar sempre */
+const verFixa=()=>{try{const v=localStorage.getItem('rofe_versao');return v==='mobile'||v==='desktop'?v:null}catch(e){return null}};
+function escolha(s){if(!P(s==='comb'?'sis_comb':'sis_pneus')){alert('Seu usuário não tem acesso a este sistema.');return}ALVO=s;const vf=verFixa();if(vf){modo(vf);return}const ck=document.getElementById('vsem');if(ck)ck.checked=false;const m=mq.matches,g=i=>document.getElementById(i);g('cm').classList.toggle('rec',m);g('cd').classList.toggle('rec',!m);g('in3q').textContent=s==='comb'?'Como você quer usar o controle de combustível?':'Como você quer usar o sistema de pneus?';g('in1').hidden=true;g('in3').hidden=false}
+function modo(m){const ck=document.getElementById('vsem');if(ck&&ck.checked){ck.checked=false;try{localStorage.setItem('rofe_versao',m)}catch(e){}toast('VERSÃO '+(m==='mobile'?'MOBILE':'DESKTOP')+' DEFINIDA COMO PADRÃO')}
+ if(ALVO==='comb'){lembrar('combustivel');lsS('comb_mob',m==='mobile'?'1':'0');mostrarComb();return}
  setLoc('pneus');try{sessionStorage.setItem('sgpneus_sess','pneus')}catch(e){}lsS('sgpneus_mob',m==='mobile'?'1':'0');aplM();carregar()}
 function fecharComb(){const w=document.getElementById('cw');if(w)w.hidden=true}
 function abrirComb(){escolha('comb')}
@@ -1475,7 +1531,7 @@ function mostrarComb(){fecharNF();setLoc('comb');const f=document.getElementById
  document.getElementById('in').classList.add('off');w.hidden=false;stCw()}
 function abrirManut(){const u='https://rofe.app/smrofe/accounts/login/?next=/smrofe/inspecao/';const w=window.open(u,'_blank');if(w){try{w.opener=null}catch(e){}}else{location.href=u}}
 function voltarEsc(){document.getElementById('in3').hidden=true;document.getElementById('in1').hidden=false}
-function intro(k){clearTimeout(_fimT);try{sessionStorage.removeItem('rofe_loc')}catch(e){}fecharComb();fecharNF();usFechar();bkFechar();if(k!==1)try{localStorage.removeItem('sgpneus_intro');sessionStorage.removeItem('sgpneus_sess');sessionStorage.removeItem('sgpneus_view')}catch(e){}const o=document.getElementById('in'),l=document.getElementById('lgo');l.classList.remove('go');void l.offsetWidth;l.classList.add('go');document.getElementById('in1').hidden=false;document.getElementById('in3').hidden=true;document.getElementById('in2').hidden=true;document.getElementById('pbi').style.width='0';o.classList.remove('off');requestAnimationFrame(()=>o.classList.remove('out'))}
+function intro(k){clearTimeout(_fimT);_carId++;try{sessionStorage.removeItem('rofe_loc')}catch(e){}fecharComb();fecharNF();usFechar();bkFechar();if(k!==1)try{localStorage.removeItem('sgpneus_intro');sessionStorage.removeItem('sgpneus_sess');sessionStorage.removeItem('sgpneus_view')}catch(e){}const o=document.getElementById('in'),l=document.getElementById('lgo');l.classList.remove('go');void l.offsetWidth;l.classList.add('go');document.getElementById('in1').hidden=false;document.getElementById('in3').hidden=true;document.getElementById('in2').hidden=true;document.getElementById('pbi').style.width='0';o.classList.remove('off');requestAnimationFrame(()=>o.classList.remove('out'))}
 setTimeout(()=>{document.getElementById('bt').src=document.getElementById('bl').src;if(!FB_ON)autoAbrir()},0);
 addEventListener('beforeprint',()=>{document.getElementById('pd').textContent='Emitido em '+new Date().toLocaleString('pt-BR')});
 /* ===== FIM TELA INICIAL ===== */
@@ -1526,7 +1582,7 @@ const fd=v=>{v=String(v||'').toUpperCase().replace(/\s+/g,'').replace(/\//g,'');
  fo=v=>{v=String(v||'').replace(/\D/g,'').slice(0,4);return v.length>2?v.slice(0,2)+'/'+v.slice(2):v};
 document.addEventListener('input',e=>{const t=e.target;if(!t||!t.id)return;const v=t.id==='f_dim'?fd(t.value):t.id==='f_dot'?fo(t.value):null;if(v!==null&&v!==t.value)t.value=v});
 document.addEventListener('focusin',e=>{const t=e.target;if(t&&t.id==='f_dot'){t.inputMode='numeric';t.maxLength=5;t.placeholder='23/24'}else if(t&&t.id==='f_dim')t.placeholder='275/80R22.5'});
-const NAV=[['dash','Painel','📊'],['gf','Frota','🚛',[['map','Mapa dos pneus','🗺️'],['ins','Inspeções','📋'],['ocu','Ocupação','🚚']]],['gp','Pneus','<svg class="ti" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6.2"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><path d="M12 5.8V8M12 16v2.2M5.8 12H8M16 12h2.2" stroke-linecap="round"/></svg>',[['pn:estoque','Estoque','📦'],['pn:frota','Rodando','🛣️'],['pn:recapagem','Na recapagem','♻️'],['pn:descartado','Descartados','🗑️'],['pn:todos','Todos os pneus','📋']]],['gg','Gestão','📈',[['cpk','Custos e CPK','💰'],['rcp','Recapadoras','🏭'],['his','Histórico','🕘']]]],NAVF=NAV.flatMap(x=>x[3]||[x]);
+const NAV=[['dash','Painel','📊'],['gf','Frota','🚛',[['fro','Frota completa','🗂️'],['map','Mapa dos pneus','🗺️'],['ins','Inspeções','📋'],['ocu','Ocupação','🚚']]],['gp','Pneus','<svg class="ti" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6.2"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><path d="M12 5.8V8M12 16v2.2M5.8 12H8M16 12h2.2" stroke-linecap="round"/></svg>',[['pn:estoque','Estoque','📦'],['pn:frota','Rodando','🛣️'],['pn:recapagem','Na recapagem','♻️'],['pn:descartado','Descartados','🗑️'],['pn:todos','Todos os pneus','📋']]],['gg','Gestão','📈',[['cpk','Custos e CPK','💰'],['rcp','Recapadoras','🏭'],['his','Histórico','🕘']]]],NAVF=NAV.flatMap(x=>x[3]||[x]);
 let NG='',NK='',oo='pct';
 const NT=()=>[['-','Sincronização'],['☁️',SY.msg.length>28?(ONLINE?'Online · tempo real':'Sem conexão'):SY.msg,'syInfo()',SY.ok()],...(P('pn_relatorios')?[['-','Dados'],['📄','Exportar CSV','csv()'],['🖨️','Imprimir / salvar PDF','print()']]:[]),['-','Sistema'],['↩️','Desfazer última ação','undo()',UD.length||''],['🌓','Alternar tema','tema()'],['🏠','Tela inicial','intro()'],...(P('pn_excluir')?[['🧹','Zerar pneus cadastrados','zerar()']]:[])];
 /* acessos por tela e por botão (usuários e acessos ficam na tela inicial) */
@@ -1540,7 +1596,7 @@ function nav(){const cur=view==='pn'?'pn:'+flt:view;
  const NV=NAV.map(x=>x[3]?[x[0],x[1],x[2],x[3].filter(c=>pode(...c[0].split(':')))]:x).filter(x=>x[3]?x[3].length:pode(x[0]));
  $('#nav').innerHTML=NV.map(x=>x[3]?gp(x[0],x[1],x[2],x[3].map(lk).join(''),x[3].some(c=>c[0]===cur)):lk(x)).join('')+navRod()}
 function navRod(){const u=fbUser(),c=CONTA&&CATS[CONTA.cat];return`<div class="nrd">${u?`<div class="nus">${avatar(PESSOAL,u.email,34)}<span><b>${esc(nomeC()||u.email)}</b><small>${isSuper()?'👑 ADM principal':c?c.i+' '+c.n:''}</small></span></div>`:''}<div class="nst${ONLINE?' on':''}">${ONLINE?'● Online · tempo real':'○ Sem conexão'}${_pend.length?' · '+_pend.length+' a enviar':''}</div><div class="nbt"><button type="button" onclick="undo()" ${UD.length?'':'disabled'} title="Desfazer a última ação">↩️ Desfazer</button><button type="button" onclick="tema()" title="Alternar tema claro/escuro" aria-label="Alternar tema">🌓</button><button type="button" onclick="mob()" title="${isMob()?'Usar versão desktop':'Usar versão mobile'}" aria-label="Trocar versão">${isMob()?'🖥️':'📱'}</button></div><button type="button" class="nhome" onclick="intro()">🏠 Voltar aos sistemas</button></div>`}
-const pf0=()=>({dim:'todos',mar:'todos',cid:'todos',al:0,dup:0,o:'id'});let pf=pf0();
+const pf0=()=>({dim:'todos',mar:'todos',cid:'todos',al:0,dup:0,o:'id'});let pf=pf0(),frO='placa';
 function go(k){[view,flt]=k.split(':');flt=flt||'todos';q='';pf=pf0();draw();scrollTo(0,0)}
 const srch=()=>`<input id="q" type="search" placeholder="Buscar…" value="${esc(q)}" oninput="q=this.value;draw();const e=$('#q');e.focus();e.setSelectionRange(99,99)" aria-label="Buscar">`;
 const bt=(l,f,c='')=>`<button class="${c}" onclick="${f}">${l}</button>`;
@@ -1551,9 +1607,20 @@ const act=(t,cl)=>AC[t.status].filter(a=>P(AP[a[1]])).map(a=>`<button type="butt
 function insL(){return S.veic.map(v=>{const ts=S.tires.filter(t=>t.veiculo===v.placa),ds=ts.map(t=>t.insp?Math.floor((Date.now()-new Date(t.insp+'T12:00'))/864e5):null),sem=ds.filter(d=>d===null).length,kn=ds.filter(d=>d!==null),mx=kn.length?Math.max(...kn):null,mn=kn.length?Math.min(...kn):null,
  st=!ts.length?'vazio':sem?'nunca':mx>30?'venc':mx>=25?'breve':'ok';return{v,ts,sem,mx,mn,st,rest:mx===null?null:30-mx}}).filter(x=>x.st!=='vazio')}
 const act1=t=>{const a=AC[t.status].find(x=>P(AP[x[1]])&&x[1]!=='et');return(a?`<button type="button" onclick="${a[1]}('${esc(t.id)}')">${a[0]}</button>`:'')+`<button type="button" class="mais" onclick="tVer('${esc(t.id)}')" title="Todas as ações e detalhes">⋯</button>`};
-function tVer(id){const t=T(id);if(!t)return;const k=rod(t),m=minS(t);
- $('#fm').innerHTML=`<h3>${TIRE} ${esc(t.id)}</h3><p>${esc(t.marca)} ${esc(t.modelo)} · ${esc(t.dim)} · DOT ${esc(t.dot||'—')} · vida ${t.vida||1}<br>${t.status==='frota'?'🚛 <b>'+esc(t.veiculo)+'</b> · '+esc(t.pos):'Situação: <b>'+esc(t.status)+'</b>'}${k?' · '+k.toLocaleString('pt-BR')+' km rodados':''}${m!==null?' · sulco '+m+' mm':''}${t.psi?' · '+t.psi+' psi':''}${t.insp?' · inspecionado em '+new Date(t.insp+'T12:00').toLocaleDateString('pt-BR'):''}</p><div>${t.status==='descartado'?esc(t.laudo||''):tags(t)}</div>
- <div class="fa" style="justify-content:flex-start;flex-wrap:wrap">${act(t,1)}${P('pn_obs')?`<button type="button" onclick="obs('${esc(t.id)}')">📝 Observações${(t.obs||[]).length?' ('+t.obs.length+')':''}</button>`:''}${t.status==='frota'?`<button type="button" onclick="dlg.close();view='map';flt='todos';q='${esc(t.veiculo)}';draw();scrollTo(0,0)">🗺️ Ver no mapa</button>`:''}<button type="button" class="p" onclick="dlg.close()">Fechar</button></div>`;dlg.showModal()}
+function tVer(id){const t=T(id);if(!t)return;const k=rod(t),m=minS(t),e=esc(t.id),v=t.veiculo&&V(t.veiculo),
+ ST={frota:['● Rodando','ok'],estoque:['📦 No estoque','sky'],recapagem:['♻️ Na recapagem','wn'],descartado:['🗑️ Descartado','bad']}[t.status]||[t.status,'mu'],
+ cls=m===null?'':m<3?'bad':m<5?'wn':'ok',pct=m===null?0:Math.max(4,Math.min(100,m/16*100)),
+ it=(ic,l,x)=>`<div class="tvi"><small>${ic} ${l}</small><b>${x}</b></div>`,has=f=>AC[t.status].some(a=>a[1]===f)&&P(AP[f]),
+ bt2=(f,lb,ic,c='')=>`<button type="button" class="${c}" onclick="dlg.close();${f}('${e}')"><span>${ic}</span>${lb}</button>`,
+ prim=[['insp','Inspecionar','📋'],['inst','Instalar','🔧'],['apr','Aprovar retorno','✅'],['rz','Rodízio','🔄'],['ret','Voltar ao estoque','📦']].filter(x=>has(x[0])).map((x,i)=>bt2(x[0],x[1],x[2],i?'':'p')).join(''),
+ sec=[['cs','Conserto','🛠️'],['et','Editar','✏️'],['env','Recapagem','♻️']].filter(x=>has(x[0])).map(x=>bt2(x[0],x[1],x[2])).join('')+bt2('tHist','Histórico','🕘')+(P('pn_obs')?`<button type="button" onclick="obs('${e}')"><span>📝</span>Observações${(t.obs||[]).length?` <i class="nb">${t.obs.length}</i>`:''}</button>`:''),
+ dang=[['dsc','Descartar','🗑️'],['exc','Excluir de vez','⛔']].filter(x=>has(x[0])).map(x=>bt2(x[0],x[1],x[2],'d')).join('');
+ $('#fm').innerHTML=`<div class="tvh"><div class="tvic">${TIRE}</div><div class="tvt"><h3>${e}</h3><p>${esc(t.marca||'')} ${esc(t.modelo||'')}</p></div><span class="tg ${ST[1]} tvst">${ST[0]}</span><button type="button" class="tvx" onclick="dlg.close()" aria-label="Fechar">✕</button></div>
+ ${t.status==='frota'?`<div class="tvloc"><span>🚛</span><div><b>${esc(t.veiculo)}</b><small>Posição <b>${esc(t.pos)}</b>${v&&v.cid?' · '+cidH(v.cid):''}${v&&v.modelo?' · '+esc(v.modelo):''}</small></div><button type="button" onclick="dlg.close();view='map';flt='todos';q='${esc(t.veiculo)}';draw();scrollTo(0,0)">🗺️ Ver no mapa</button></div>`:''}
+ ${m!==null?`<div class="tvs ${cls}"><div><small>Sulco atual</small><b>${m} mm</b></div><div class="tvbar" role="img" aria-label="Sulco ${m} mm"><i style="width:${pct}%"></i></div><small>${m<3?'Abaixo do mínimo':m<5?'Atenção':'Bom'}</small></div>`:''}
+ <div class="tvg">${it('📏','Medida',esc(t.dim||'—'))}${it('🏷️','DOT',esc(t.dot||'—'))}${it('🔁','Vida',(t.vida||1)+'ª')}${it('💨','Pressão',t.psi?t.psi+' psi':'—')}${it('🛣️','Rodou',k?k.toLocaleString('pt-BR')+' km':'—')}${it('📅','Última inspeção',t.insp?new Date(t.insp+'T12:00').toLocaleDateString('pt-BR'):'nunca')}${P('pn_custos')?it('💰','Custo total',brl(+t.custo||0)):''}</div>
+ <div class="tva">${t.status==='descartado'?`<span class="tg bad">${esc(t.laudo||'Descartado')}</span>`:alr(t).length?tags(t):'<span class="tg ok">✓ Sem alertas</span>'}</div>
+ ${prim?`<div class="tvl">Ações</div><div class="tvp">${prim}</div>`:''}<div class="tvb">${sec}</div>${dang?`<div class="tvd">${dang}</div>`:''}`;dlg.showModal();dlg.scrollTop=0}
 function obs(id){const t=T(id);if(!t)return;const l=(t.obs||[]).slice().sort((a,b)=>(b.t||0)-(a.t||0));
  $('#fm').innerHTML=`<h3>📝 Observações · pneu ${esc(t.id)}</h3><p>${t.status==='frota'?'🚛 '+esc(t.veiculo)+' · '+esc(t.pos)+' · ':''}Anotações de reunião e acompanhamento deste pneu.</p>
  <div class="fd w"><label for="ob_t">Nova observação</label><textarea id="ob_t" rows="3" placeholder="Ex.: reunião de 13/11 – trocar no próximo rodízio"></textarea></div>
@@ -1609,6 +1676,18 @@ dash(){const fr=by('frota'),tot=S.tires.reduce((a,t)=>a+(+t.custo||0),0),km=S.ti
  <h3>Alertas</h3><div class="tb"><select aria-label="Filtrar alertas" onchange="da=this.value;draw()">${AO.map(o=>`<option value="${o[0]}"${o[0]===da?' selected':''}>${o[1]} (${rows.filter(r=>AF[o[0]](r[1])).length})</option>`).join('')}</select></div>`+tbl(['Pneu','Local','Alerta',''],rw.map(([t,a])=>[nm(t),t.veiculo?esc(t.veiculo)+' · '+esc(t.pos):t.status,`<span class="tg ${a[0]}">🚩 ${esc(a[1].toUpperCase())}</span>`,t.status==='frota'&&P('pn_inspecionar')?bt('Inspecionar',`insp('${esc(t.id)}')`):'']),da==='todos'?'Nenhum alerta. Sulcos, PSI, DOT e inspeções estão em dia.':'Nenhum alerta neste filtro.')},
 vAcoes(v,n){const p=esc(v.placa),b=[P('pn_nfhist')&&bt('🧾 Histórico de NF'+(n?' ('+n+')':''),`nfHistV('${p}')`),bt('🕘 Histórico do caminhão',`view='his';q='${p}';draw();scrollTo(0,0)`),P('pn_veiculos')&&bt('🔁 Trocar tipo',`tv('${p}')`),P('pn_veiculos')&&bt('📍 Trocar filial',`tc('${p}')`),P('pn_excluir')&&bt('🧹 Tirar todos os pneus',`zp('${p}')`,'d'),P('pn_excluir')&&bt('🗑️ Excluir caminhão',`dv('${p}')`,'d')].filter(Boolean);
  return`<details class="dd vdd"><summary aria-label="Ações do caminhão">⋯ Ações${n?` <span class="nb">${n} NF</span>`:''}</summary><div>${b.join('')}</div></details>`},
+fro(){const L=insL(),IM=new Map(L.map(x=>[x.v.placa,x])),cs=[...new Set(S.veic.map(v=>v.cid).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR')),
+ TG={nunca:['bad','Nunca inspecionado'],venc:['bad','Inspeção vencida'],breve:['wn','Vence em breve'],ok:['ok','Em dia']},pl=(a,b)=>a.placa.localeCompare(b.placa,'pt-BR'),tn=v=>(LAY[v.tipo]||{}).n||v.tipo||'',
+ ORD={placa:pl,modelo:(a,b)=>String(a.modelo||'').localeCompare(String(b.modelo||''),'pt-BR')||pl(a,b),filial:(a,b)=>String(a.cid||'').localeCompare(String(b.cid||''),'pt-BR')||pl(a,b),tipo:(a,b)=>tn(a).localeCompare(tn(b),'pt-BR')||pl(a,b),km:(a,b)=>(+b.km||0)-(+a.km||0)||pl(a,b)},
+ qq=cn(q),l=S.veic.filter(v=>(fc==='todos'||v.cid===fc)&&(ft==='todos'||v.tipo===ft)&&(!qq||cn(v.placa+' '+(v.modelo||'')+' '+(v.cid||'')+' '+tn(v)).includes(qq))).sort(ORD[frO]||pl),
+ o=(val,t,cur)=>`<option value="${esc(val)}"${val===cur?' selected':''}>${esc(t)}</option>`;
+ return`<h2>Frota completa</h2><p class="sub">Todos os caminhões de todas as filiais e de todos os tipos, em ordem alfabética. Toque em “Mapa” para ver os pneus do caminhão.</p>
+ <div class="kp"><div><b>${S.veic.length}</b><span>caminhões na frota</span></div>${cs.map(c=>`<div><b>${S.veic.filter(v=>v.cid===c).length}</b><span>${cidH(c)}</span></div>`).join('')}</div>
+ <div class="tb">${srch()}<select aria-label="Filial" onchange="fc=this.value;draw()">${o('todos','Todas as filiais',fc)}${cs.map(c=>o(c,cidT(c),fc)).join('')}</select><select aria-label="Tipo de caminhão" onchange="ft=this.value;draw()">${o('todos','Todos os tipos',ft)}${Object.keys(LAY).map(k=>o(k,LAY[k].n,ft)).join('')}</select><select aria-label="Ordem" onchange="frO=this.value;draw()">${o('placa','Ordem: placa (A–Z)',frO)}${o('modelo','Ordem: modelo (A–Z)',frO)}${o('filial','Ordem: filial (A–Z)',frO)}${o('tipo','Ordem: tipo (A–Z)',frO)}${o('km','Ordem: maior KM',frO)}</select>${P('pn_veiculos')?bt('＋ Novo veículo','nv()','p'):''}</div>
+ <p class="sub" style="margin:-4px 0 12px">${l.length} de ${S.veic.length} caminhão(ões)</p>`+
+ tbl(['Placa','Modelo','Tipo','Filial','KM','Pneus','Inspeção',''],l.map(v=>{const n=PL(v.tipo).length,c=S.tires.filter(t=>t.veiculo===v.placa).length,x=IM.get(v.placa),tg=x?TG[x.st]:null;
+  return[`<b class="frp">${esc(v.placa)}</b>`,esc(v.modelo||'—'),esc(tn(v)||'—'),v.cid?cidH(v.cid):'—',(+v.km||0).toLocaleString('pt-BR'),`<b class="${c===n?'ok':c?'wn':''}">${c}/${n}</b>`,tg?`<span class="tg ${tg[0]}">${tg[1]}</span>`:'<span class="tg mu">Sem pneus</span>',
+   `<div class="ra">${bt('🗺️ Mapa',`view='map';flt='todos';fm='todos';q='${esc(v.placa)}';draw();scrollTo(0,0)`)}${P('pn_inspecionar')&&c?bt('📋 Inspecionar',`ib('${esc(v.placa)}')`):''}</div>`]}),'Nenhum caminhão encontrado.')},
 ins(){const cs=[...new Set(S.veic.map(v=>v.cid).filter(Boolean))].sort(),L=insL(),ord={nunca:0,venc:1,breve:2,ok:3},
  l=L.filter(x=>(fc==='todos'||x.v.cid===fc)&&(fm==='todos'||fm===x.st||fm==='pend'&&x.st!=='ok')&&(x.v.placa+(x.v.modelo||'')+(x.v.cid||'')).toLowerCase().includes(q.toLowerCase())).sort((a,b)=>ord[a.st]-ord[b.st]||(b.mx??999)-(a.mx??999)),
  n=k=>L.filter(x=>x.st===k).length,TG={nunca:['bad','Nunca inspecionado'],venc:['bad','Vencida'],breve:['wn','Vence em breve'],ok:['ok','Em dia']},
@@ -1620,7 +1699,7 @@ ins(){const cs=[...new Set(S.veic.map(v=>v.cid).filter(Boolean))].sort(),L=insL(
   `<div class="ra">${P('pn_inspecionar')?bt('📋 Inspecionar',`ib('${esc(x.v.placa)}')`,'p'):''}${bt('🗺️ Mapa',`view='map';q='${esc(x.v.placa)}';draw();scrollTo(0,0)`)}</div>`]),'Nenhum caminhão neste filtro.')},
 map(){const nfc={};Object.values(NFS||{}).forEach(n=>{if(n&&n.pneu)nfc[n.placa]=(nfc[n.placa]||0)+1});const cs=[...new Set([...CID,...S.veic.map(v=>v.cid).filter(Boolean)])],cmp=v=>PL(v.tipo).every(p=>S.tires.some(t=>t.veiculo===v.placa&&t.pos===p)),l=S.veic.filter(v=>(ft==='todos'||v.tipo===ft)&&(fc==='todos'||v.cid===fc)&&(fm==='todos'||(fm==='comp')===cmp(v))&&(v.placa+v.modelo+(v.cid||'')).toLowerCase().includes(q.toLowerCase())),nc=S.veic.filter(cmp).length;
  return`<h2>Mapa dos pneus</h2><p class="sub">Toque num pneu para ver as ações, ou no <b>+</b> para instalar. <span class="lgd"><span><i class="ok"></i>5 mm ou mais</span><span><i class="wn"></i>3 a 5 mm</span><span><i class="bad"></i>abaixo de 3 mm</span></span></p><div class="tb">${srch()}<select aria-label="Tipo de caminhão" onchange="ft=this.value;draw()"><option value="todos">Todos os tipos</option>${Object.keys(LAY).map(k=>`<option value="${k}"${k===ft?' selected':''}>${LAY[k].n}</option>`).join('')}</select><select aria-label="Filial" onchange="fc=this.value;draw()"><option value="todos">Todas as filiais</option>${cs.map(c=>`<option value="${esc(c)}"${c===fc?' selected':''}>${esc(cidT(c))}</option>`).join('')}</select><select aria-label="Situação dos pneus" onchange="fm=this.value;draw()"><option value="todos">Todos os carros</option><option value="comp"${fm==='comp'?' selected':''}>Carros completos (${nc})</option><option value="inc"${fm==='inc'?' selected':''}>Carros incompletos (${S.veic.length-nc})</option></select>${P('pn_veiculos')?bt('Novo veículo','nv()','p'):''}</div><p class="sub" style="margin:-4px 0 14px">${l.length} veículo(s)</p>`+
- (l.length?l.map(v=>{const c=S.tires.filter(t=>t.veiculo===v.placa).length,n=PL(v.tipo).length;return`<div class="vc${S.tires.some(t=>t.veiculo===v.placa&&dvOf(t).length)?' dvc':''}"><div class="vh"><div><h3>${esc(v.placa)}</h3><span class="vi">${esc(v.modelo)}${v.cid?' · '+cidH(v.cid):''} · ${LAY[v.tipo].n} · ${c}/${n} pneus</span></div><div class="vhr"><div class="km"><div class="kv"><b>${(+v.km).toLocaleString('pt-BR')}</b><small>km atuais</small></div>${(P('pn_km')?bt('Atualizar KM',`ukm('${esc(v.placa)}')`):'')}</div>${V_.vAcoes(v,nfc[v.placa])}</div></div>${vsum(v)}<div class="mw">${mapa(v)}</div></div>`}).join(''):'<div class="em">Nenhum veículo encontrado.</div>')},
+ (l.length?'<div class="vgr">'+l.map(v=>{const c=S.tires.filter(t=>t.veiculo===v.placa).length,n=PL(v.tipo).length;return`<div class="vc${S.tires.some(t=>t.veiculo===v.placa&&dvOf(t).length)?' dvc':''}"><div class="vh"><div><h3>${esc(v.placa)}</h3><span class="vi">${esc(v.modelo)}${v.cid?' · '+cidH(v.cid):''} · ${LAY[v.tipo].n} · ${c}/${n} pneus</span></div><div class="vhr"><div class="km"><div class="kv"><b>${(+v.km).toLocaleString('pt-BR')}</b><small>km atuais</small></div>${(P('pn_km')?bt('Atualizar KM',`ukm('${esc(v.placa)}')`):'')}</div>${V_.vAcoes(v,nfc[v.placa])}</div></div>${vsum(v)}<div class="mw">${mapa(v)}</div></div>`}).join('')+'</div>':'<div class="em">Nenhum veículo encontrado.</div>')},
 pn(){const N={todos:'Todos os pneus',estoque:'Estoque',frota:'Rodando (montados nos caminhões)',recapagem:'Na recapagem',descartado:'Descartados'},b=S.tires.filter(t=>flt==='todos'||t.status===flt),cd=t=>(V(t.veiculo)||{}).cid||'',u=a=>[...new Set(a.filter(Boolean))].sort(),dias=t=>t.rec?Math.floor((Date.now()-new Date(t.rec+'T12:00'))/864e5):null,sm=a=>a.reduce((x,t)=>x+(+t.custo||0),0),cnt=b.length,
  l=pnRows(),adm=P('pn_custos');
  const kp={estoque:[[cnt,'em estoque'],...(adm?[[brl(sm(b)),'valor em estoque']]:[]),[b.filter(t=>alr(t).length).length,'com alerta'],[u(b.map(t=>t.dim)).length,'dimensões']],
@@ -1649,7 +1728,10 @@ ocu(){const cs=[...new Set([...CID,...S.veic.map(v=>v.cid).filter(Boolean)])],
  <h3>Por caminhão</h3>`+tbl(['Placa','Modelo / tipo','Filial','Pneus','Ocupação','Posições vazias',''],l.map(x=>[`<b>${esc(x.v.placa)}</b>`,`${esc(x.v.modelo||'')}<br><small>${LAY[x.v.tipo].n}</small>`,x.v.cid?cidH(x.v.cid):'—',`<span class="oq"><b>${x.c}</b> de ${x.n}</span>`,bar(x.c,x.n),x.f.length?`<div class="of">${x.f.map(p=>`<span class="tg ${x.c===0?'bad':'wn'}">${esc(p)}</span>`).join('')}</div>`:'<span class="tg ok">completo</span>',bt('Ver mapa',`go('map');q='${esc(x.v.placa)}';draw()`)]),'Nenhum caminhão encontrado.')+
  `<h3>Por filial</h3>`+tbl(['Filial','Caminhões','Pneus instalados / posições','Ocupação'],Object.entries(fil).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).map(([k,g])=>[`<b>${esc(k)}</b>`,g.v,`${g.c} de ${g.n}`,bar(g.c,g.n)]),'Sem dados.')},
 his(){const l=S.hist.filter(h=>(h.t+h.m+(h.u||'')).toLowerCase().includes(q.toLowerCase()));return`<h2>Histórico</h2><p class="sub">Toda movimentação fica registrada.</p><div class="tb">${srch()}</div>`+tbl(['Data','Ação','Detalhe','Usuário'],l.map(h=>[h.d,esc(h.t),esc(h.m),esc(h.u||'—')]),'Nenhuma movimentação registrada.')}};
-function draw(){if(view==='gra')view='cpk';if(view==='map'&&!['todos','comp','inc'].includes(fm)||view==='ins'&&!['todos','pend','nunca','venc','breve','ok'].includes(fm))fm='todos';if(!V_[view]||!pode(view,flt)){view='dash';flt='todos'}try{sessionStorage.setItem('sgpneus_view',view+'|'+flt)}catch(e){}nav();$('#m').innerHTML='<button type="button" class="sairx sairD" onclick="intro()" title="Voltar para a tela inicial do ROFE">Sair ⇥</button>'+V_[view]();{const k=view==='pn'?'pn:'+flt:view,n=NAVF.find(x=>x[0]===k),h=$('#m h2');if(n&&n[2]&&h)h.innerHTML='<span style="font-size:.85em">'+n[2]+'</span> '+h.innerHTML}}
+/* números grandes (ex.: R$ 48.000,00) diminuem a letra para caber no quadro, sem cortar */
+function fitKp(){if(isMob())return;document.querySelectorAll('.kp>div>b').forEach(b=>{b.style.fontSize='';let f=parseFloat(getComputedStyle(b).fontSize),n=0;while(b.scrollWidth>b.clientWidth+1&&f>12&&n++<30){f-=1;b.style.fontSize=f+'px'}})}
+addEventListener('resize',()=>{clearTimeout(window._fk);window._fk=setTimeout(fitKp,120)});
+function draw(){if(view==='gra')view='cpk';if(view==='map'&&!['todos','comp','inc'].includes(fm)||view==='ins'&&!['todos','pend','nunca','venc','breve','ok'].includes(fm))fm='todos';if(!V_[view]||fbUser()&&ativo()&&!pode(view,flt)){view='dash';flt='todos'}nav();$('#m').innerHTML='<button type="button" class="sairx sairD" onclick="intro()" title="Voltar para a tela inicial do ROFE">Sair ⇥</button>'+V_[view]();{const k=view==='pn'?'pn:'+flt:view,n=NAVF.find(x=>x[0]===k),h=$('#m h2');if(n&&n[2]&&h)h.innerHTML='<span style="font-size:.85em">'+n[2]+'</span> '+h.innerHTML}fitKp();salvaEst()}
 const SUL=[{k:'a',l:'Sulco (mm)',t:'number'}];
 const marcas=()=>[...new Set(S.tires.map(t=>(t.marca||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
 function np(){ask('Novo pneu','',[{k:'dim',l:'Dimensão'},{k:'marca',l:'Marca',sug:marcas()},{k:'modelo',l:'Modelo'},{k:'id',l:'Nº de fogo'},{k:'dot',l:'Ano (DOT: semana/ano, ex.: 23/24)'},{k:'a',l:'Sulco (mm)',t:'number',r:false},{k:'psiMin',l:'PSI mínimo',t:'number'},{k:'psiMax',l:'PSI máximo',t:'number'},{k:'custo',l:'Valor de compra (R$)',t:'number',r:false}],d=>{if(!psiRangeOk(d.psiMin,d.psiMax)){alert('PSI mínimo não pode ser maior que o máximo.');return false}if(!sulOk(d.a)){alert('Sulco entre 0 e 30 mm.');return false}if(!dupChk(d))return false;const x=fogoChk(d.id);if(!x)return false;const a=d.a;delete d.a;const t={...d,custo:+d.custo||0,vida:1,status:'estoque',kmAc:0,sulcos:a?[+a]:[]};S.tires.push(t);addS(t,x);log('Cadastro',d.id);_tm='PNEU CADASTRADO NO ESTOQUE!'},'Salvar pneu')}
@@ -1811,7 +1893,7 @@ const dBR=d=>d?String(d).split('-').reverse().join('/'):'—',nfMoeda=n=>n==null
 function imgRs(file,max,q){return new Promise((res,rej)=>{const r=new FileReader();r.onerror=rej;r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(im.width*k));c.height=Math.max(1,Math.round(im.height*k));const g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,c.width,c.height);g.drawImage(im,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',q))};im.onerror=rej;im.src=r.result};r.readAsDataURL(file)})}
 function fecharNF(){const w=document.getElementById('nfw');if(w)w.hidden=true}
 function abrirNF(){lembrar('nf');mostrarNF()}
-function mostrarNF(){fecharComb();setLoc('nf');document.getElementById('in').classList.add('off');document.getElementById('nfw').hidden=false;nfTela();stCw()}
+function mostrarNF(){fecharComb();setLoc('nf');try{const f=JSON.parse(sessionStorage.getItem('rofe_nf_st')||'null');if(f)NF_F=Object.assign(NF_F,f)}catch(e){}document.getElementById('in').classList.add('off');document.getElementById('nfw').hidden=false;nfTela();stCw()}
 function nfAtualiza(){const w=document.getElementById('nfw');if(w&&!w.hidden)nfLista();if(view==='map'&&!dlg.open&&document.getElementById('in').classList.contains('off')&&w&&w.hidden)redraw()}
 function nfTela(){const ps=[...new Set([...nfPl().map(v=>v.placa),...nfL().map(n=>n.placa)])],cs=[...new Set(S.veic.map(v=>v.cid).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR')),
  o=(v,l,c)=>`<option value="${esc(v)}"${c===v?' selected':''}>${esc(l)}</option>`,cid=p=>(V(p)||{}).cid;
@@ -1823,7 +1905,7 @@ function nfTela(){const ps=[...new Set([...nfPl().map(v=>v.placa),...nfL().map(n
  <select aria-label="Serviço de pneu" onchange="NF_F.pn=this.value;nfLista()">${o('','Pneu e outros serviços',NF_F.pn)}${o('s','Só serviço de pneu',NF_F.pn)}${o('n','Sem serviço de pneu',NF_F.pn)}</select>
  <input type="month" aria-label="Mês" value="${esc(NF_F.mes)}" onchange="NF_F.mes=this.value;nfLista()" style="width:auto">
  <button type="button" onclick="NF_F={q:'',placa:'',st:'',pn:'',fil:'',mes:''};nfTela()">Limpar filtros</button></div><div id="nfl"></div>`;nfLista()}
-function nfLista(){const e=document.getElementById('nfl');if(!e)return;const f=NF_F,qq=cn(f.q),cid=p=>(V(p)||{}).cid||'',all=nfL(),
+function nfLista(){setTimeout(fitKp,0);try{sessionStorage.setItem('rofe_nf_st',JSON.stringify(NF_F))}catch(e){}const e=document.getElementById('nfl');if(!e)return;const f=NF_F,qq=cn(f.q),cid=p=>(V(p)||{}).cid||'',all=nfL(),
  l=all.filter(n=>(!f.placa||n.placa===f.placa)&&(!f.st||n.status===f.st)&&(!f.pn||(f.pn==='s')===!!n.pneu)&&(!f.fil||cid(n.placa)===f.fil)&&(!f.mes||String(n.data||'').slice(0,7)===f.mes)&&(!qq||cn([n.numero,n.serie,n.fornecedor,n.cnpj,n.desc,n.obs,n.placa].join(' ')).includes(qq))),
  sm=l.reduce((s,n)=>s+(+n.valor||0),0);
  $('#nfk').innerHTML=[[l.length,'NF(s) no filtro'],[l.filter(n=>n.status!=='finalizado').length,'em andamento'],[l.filter(n=>n.status==='finalizado').length,'finalizadas'],[l.filter(n=>n.pneu).length,'serviço de pneu'],[brl(sm),'valor informado']].map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
@@ -1900,7 +1982,10 @@ const GUARD={et:'pn_editar',cs:'pn_conserto',env:'pn_recapagem',apr:'pn_recapage
  inst:'pn_instalar',instMap:'pn_instalar',insp:'pn_inspecionar',ib:'pn_inspecionar',rz:'pn_rodizio',ret:'pn_retorno',ukm:'pn_km',csv:'pn_relatorios',csvF:'pn_relatorios',csvDup:'pn_relatorios',prDup:'pn_relatorios',prImg:'pn_relatorios',prPdf:'pn_relatorios',
  exp:'ger_backup',bkp:'ger_backup',bkRest:'ger_backup',bkBaixar:'ger_backup',restaura:'ger_backup',backupDia:'ger_backup',abrirComb:'sis_comb',mostrarComb:'sis_comb',combMob:'sis_comb',abrirNF:'sis_nf',mostrarNF:'sis_nf',abrirManut:'sis_manut',
  nfNova:'nf_registrar',nfEdit:'nf_editar',nfFin:'nf_editar',nfDel:'nf_excluir',nfHistV:'pn_nfhist',obs:'pn_obs',obsAdd:'pn_obs',obsDel:'pn_obs',usAbrir:'adm',usForm:'adm',usSalvar:'adm',usBloq:'adm',usSenha:'adm',usDel:'adm',bkRec:'ger_backup',bkRecTodos:'ger_backup',bkTudo:'ger_backup'};
+dlg.addEventListener('close',()=>{setTimeout(()=>{if(!dlg.open){_dlgC=null;_fv={};salvaEst()}},0)});
 for(const n in GUARD){const f=window[n],k=GUARD[n];if(typeof f==='function')window[n]=function(){if(k==='adm'?!isAdm():!P(k)){alert('Seu usuário não tem acesso a esta função. Fale com o administrador.');return}return f.apply(this,arguments)}}
+['tVer','obs','insp','ib','ukm','nfHistV','inst','instMap','rz','ret','cs','et','env','apr','dsc','np','nv','tv','tc','tHist'].forEach(n=>{const f=window[n];if(typeof f!=='function')return;
+ window[n]=function(...a){const r=f.apply(this,a);setTimeout(()=>{if(dlg.open){_dlgC=[n,a];_fv={};salvaEst()}},20);return r}});
 draw();
 </script>
 <div id="lg" style="position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 50% 42%,#0a58dc 0%,#0646bd 55%,#033399 100%);color:#fff;font-family:'Figtree',system-ui,sans-serif">
